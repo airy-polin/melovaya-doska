@@ -1,0 +1,71 @@
+.header {
+	font-size: 22px;
+	border-bottom: 2px solid #fff;
+}
+.header__row {
+	align-items: center;
+	padding: 15px 0;
+}
+.header__col {
+	flex: 1 0 calc(100%/2);
+}
+
+/* Navigation */
+.header__navigation {
+	display: inline-block;
+}
+.header__navigation__item {
+	margin-right: 26px;
+	padding: 10px 0;
+	color: #fff;
+}
+.header__navigation__item:first-child {
+	margin-left: 12px;
+}
+.header__navigation__item:last-child {
+	margin-right: 12px;
+}
+.header__navigation__item:hover {
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+	font-size: 24px;
+	transition: 0.3s ease-out;
+}
+.header__navigation__item-active {
+	color: #02B3CE;
+}
+.header__navigation__item-active:hover {
+	border-color: #02B3CE;
+}
+
+/* Nets */
+
+.header__col:last-child,
+.header__nets {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.header__col span {
+	color: #fff;
+	margin-right: 20px;
+	font-weight: 700;
+	font-size: 22px;
+}
+
+.header__nets__item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+
+/* .header__nets__item a svg {
+	stroke: #fff;
+} */
+
+/* svg path {
+	stroke: inherit;
+	stroke-width: inherit;
+	fill: inherit;
+} */

@@ -1,0 +1,46 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+}
+
+.app {
+	background-color: #333;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	padding: 0 60px;
+	margin: 0 auto;
+	display: flex;
+}
+.container__row {
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: space-between;
+}
+
+/* UI */
+title {
+	line-height: 1.2;
+	margin: 0;
+}
+.title-large {
+	font-weight: 400;
+	font-size: 36px;
+}
+.title-uppercase {
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.title-uppercase-bold {
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+}
