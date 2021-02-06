@@ -12,11 +12,13 @@ a {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 
 .container {
 	padding: 0 60px;
-	margin: 0 auto;
+	box-sizing: border-box;
+	width: 100%;
 	display: flex;
 }
 .container__row {
@@ -38,9 +40,52 @@ title {
 	font-weight: 500;
 	font-size: 18px;
 	text-transform: uppercase;
+	margin: 10px 0;
 }
 .title-uppercase-bold {
 	font-weight: 700;
 	font-size: 18px;
 	text-transform: uppercase;
+}
+
+
+/* Animation for icons */
+.scale a svg {
+	transition: 1s;
+	display: block;
+}
+.scale a svg:hover {
+	transform: scale(1.1);
+}
+
+/* Animation for small cards / main */
+.scale-more img.small {
+	transition: 1s;
+	display: block;
+}
+.scale-more img.small:hover {
+	transform: scale(1.1);
+}
+
+/* Animation for big cards / main */
+.scale-less img.big {
+	transition: 1s;
+	display: block;
+}
+.scale-less img.big:hover {
+	transform: scale(1.05);
+}
+
+/* Animation for cards / shop */
+.scale-less.box {
+	transition: 1s;
+	display: block;
+
+	/* add to fix webkit bug jitter */
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: perspective(1000px);
+}
+.scale-less.box:hover {
+	transform: scale(1.05);
+	background-color: #02B3CE;
 }

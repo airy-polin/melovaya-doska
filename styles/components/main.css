@@ -6,31 +6,65 @@
 	width: 100%;
 	display: flex;
 }
+.main__col {
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
 .main__col:first-child{
 	width: calc(100%/3);
+	min-width: 413px;
 }
 .main__col:last-child{
 	flex: 1 0 auto;
-	/* border-left: 1px solid #fff; */
 }
+
+/* page separation */
+/* .main__col:last-child::before {
+	content: '';
+	position: absolute;
+	border-left: 2px solid #fff;
+	top: 0;
+	bottom: 0;
+} */
+
+.logo-fixed {
+	position: fixed;
+	left: 0;
+	top: 82px;
+	bottom: 80px;
+	width: calc(100%/3);
+	min-height: 100vh;
+	margin: 35px 45px 35px 0;
+}
+
 
 /* Aside */
 .aside {
-	margin: 35px 0;
 	display: flex;
 	flex-direction: column;
-	color: #fff;
+	width: 100%;
+	padding-right: 20px;
+	box-sizing: border-box;
 	font-weight: 400;
 	font-size: 18px;
 }
+
 .aside__logo {
 	margin: 0 auto;
-	margin-bottom: 50px;
 }
-
+.aside__logo-fixed {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.aside__content {
+	color: #fff;
+}
 .aside__content h1 {
 	text-align: center;
 }
+
 
 /* Article cards for main page */
 .article {
@@ -58,7 +92,9 @@
 	box-sizing: border-box;
 	width: 50%;
 	padding: 0 5px;
+	position: relative;
 }
+
 .article__cards__cell:first-child {
 	padding-left: 0;
 }
@@ -66,14 +102,79 @@
 	padding-right: 0;
 }
 
+.article__description {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	padding: 10px 0;
+	padding-left: 18px;
+}
+.article__description span {
+	margin: 5px 0;
+}
+
+.article__link {
+	color: #000;
+	text-decoration: underline;
+	font-weight: 500;
+}
+
 img.big {
 	max-width: 405px;
 }
-
 img.small {
 	max-width: 197px;
 }
 
-.article__cards img {
+.article__cards img,
+.article__media img {
 	width: 100%;
+}
+
+.box {
+	background-color: #A9C9DD;
+	width: 300px;
+	padding: 0;
+	margin: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* .box:hover {
+	background-color: #02B3CE;
+} */
+
+.row {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+/* Feedbacks */
+.feedback__icon {
+	background-color: #333;
+	border-radius: 50%;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	position: absolute;
+	bottom: 85%;
+	left: 80%;
+	padding: 7px;
+}
+.feedback__text {
+	padding: 36px 10px;
+}
+.feedback__text.box {
+	margin-bottom: 5px;
+}
+.feedback__sign {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.feedback__sign span {
+	background-color: #C4C4C4;
+	width: calc((100%/3)*2);
+	padding: 10px 0 10px 10px;
 }

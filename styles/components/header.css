@@ -1,6 +1,14 @@
 .header {
-	font-size: 22px;
+	background-color: #333;
 	border-bottom: 2px solid #fff;
+	box-sizing: border-box;
+	font-size: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	max-width: inherit;
 }
 .header__row {
 	align-items: center;
@@ -9,6 +17,11 @@
 .header__col {
 	flex: 1 0 calc(100%/2);
 }
+
+.header__pseudo {
+	min-height: 82px;
+}
+
 
 /* Navigation */
 .header__navigation {
@@ -28,7 +41,7 @@
 .header__navigation__item:hover {
 	cursor: pointer;
 	border-bottom: 1px solid #fff;
-	font-size: 24px;
+	/* font-size: 22px; */
 	transition: 0.3s ease-out;
 }
 .header__navigation__item-active {
@@ -38,8 +51,8 @@
 	border-color: #02B3CE;
 }
 
-/* Nets */
 
+/* Nets */
 .header__col:last-child,
 .header__nets {
 	display: flex;
@@ -58,14 +71,17 @@
 	vertical-align: middle;
 	margin-right: 10px;
 }
-
-
-/* .header__nets__item a svg {
-	stroke: #fff;
-} */
-
-/* svg path {
-	stroke: inherit;
-	stroke-width: inherit;
-	fill: inherit;
-} */
+.header__nets__item.instagram:hover svg path {
+	stroke: #D43377;
+  }
+  .header__nets__item.instagram:hover svg path:last-child {
+	fill: #D43377;
+  }
+.header__nets__item.telegram:hover svg path {
+	stroke: #37AEE2;
+	fill: #37AEE2;
+}
+.header__nets__item.viber:hover svg path {
+	stroke:#665CA7;
+	fill: #665CA7;
+}
