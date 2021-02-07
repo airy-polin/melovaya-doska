@@ -147,3 +147,7 @@ form {
 .button-close:hover {
 	color: #02B3CE;
 }
+
+.hidden {
+	display: none;
+}

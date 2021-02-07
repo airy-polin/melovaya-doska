@@ -5,6 +5,7 @@
 @import url('./layout/base.css');
 
 /* Components */
+@import url('./components/logo.css');
 @import url('./components/header.css');
 @import url('./components/main.css');
 @import url('./components/footer.css');

@@ -6,8 +6,32 @@
 .footer__row {
 	padding: 30px 0;
 }
+.footer__navigation {
+	display: flex;
+}
 .footer__navigation__item {
 	margin-right: 100px;
 	/* text-decoration: none; */
 	color: #333;
+}
+
+@media screen and (max-width: 1379px) {
+	.container__row.footer__row {
+		flex-direction: column;
+	}
+	.footer__row {
+		padding: 15px 0;
+	}
+	.footer__col {
+		margin: 15px;
+	}
+}
+
+@media screen and (max-width: 997px) {
+	.footer__navigation {
+		flex-direction: column;
+	}
+	.footer__navigation__item {
+		padding: 5px 0;
+	}
 }

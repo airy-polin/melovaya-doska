@@ -62,14 +62,14 @@
 				<div class="container__row main__row">
 					<div class="main__col">
 						<aside class="aside">
-							<form class="feedback__button" action="mailto:polmi713@gmail.com" method="POST">
+							<form class="feedback__button" action="mailto:polmi713@gmail.com" method="POST" id="open-form-button">
 								<button class="button-floating" type="button">Оставить отзыв</button>
 							</form>
 
-							<form class="feedback__form" action="mailto:polmi713@gmail.com" method="POST">
+							<form class="feedback__form hidden" action="mailto:polmi713@gmail.com" method="POST" id="feedback-form">
 								<div class="form__header">
 									<h1 class="form__title title-uppercase-bold">Оставьте ваш отзыв</h1>
-									<button class="button-close" type="button">
+									<button class="button-close" type="button" id="close-form-button">
 										<span>X</span>
 									</button>
 								</div>
@@ -249,5 +249,7 @@
 			</div>
 		</footer>
 	</div>
+
+	<script src="../scripts/feedback.js"></script>
 </body>
 </html>
