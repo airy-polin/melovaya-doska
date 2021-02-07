@@ -53,17 +53,19 @@
 
 
 /* Nets */
+.header__tel {
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 20px;
+	color: #fff;
+	margin-right: 17px;
+}
+
 .header__col:last-child,
 .header__nets {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-}
-.header__col span {
-	color: #fff;
-	margin-right: 20px;
-	font-weight: 700;
-	font-size: 22px;
 }
 
 .header__nets__item {
@@ -74,9 +76,9 @@
 .header__nets__item.instagram:hover svg path {
 	stroke: #D43377;
   }
-  .header__nets__item.instagram:hover svg path:last-child {
+.header__nets__item.instagram:hover svg path:last-child {
 	fill: #D43377;
-  }
+}
 .header__nets__item.telegram:hover svg path {
 	stroke: #37AEE2;
 	fill: #37AEE2;

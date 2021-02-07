@@ -1,0 +1,149 @@
+/* Feedbacks area */
+form {
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+.feedback {
+	max-width: 820px;
+	margin: 22px auto;
+}
+.feedback__cards {
+	/* display: flex;
+	justify-content: center; */
+	column-count: 2;
+    column-gap: 20px;
+}
+.feedback__cards__cell {
+	margin: 40px 10px;
+	position: relative;
+	width: 300px;
+	/* display: block;
+    page-break-inside: avoid;
+    break-inside: avoid; */
+	/* float: right; */
+}
+.feedback__icon {
+	background-color: #333;
+	border-radius: 50%;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.feedback__text {
+	padding: 36px 10px;
+	background-color: #A9C9DD;
+	margin-bottom: 5px;
+}
+.feedback__sign {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.feedback__sign span {
+	background-color: #C4C4C4;
+	width: calc((100%/3)*2);
+	padding: 10px 0 10px 10px;
+}
+
+
+/* Form */
+.feedback__form {
+	max-width: 300px;
+	padding: 20px 40px;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 16px #ccc;
+	display: flex;
+	flex-direction: column;
+}
+.form__header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.form__title {
+	/* align-self: center; */
+	font-size: 14px;
+}
+.form__group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+.form__input {
+	border-radius: 4px;
+}
+.form__input:focus {
+	border-color: #02B3CE;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+}
+.form__label {
+	margin-bottom: 5px;
+}
+
+
+
+
+/* Hover for cards */
+.feedback__cards__cell:hover .feedback__text {
+	background-color: #02B3CE;
+}
+.feedback__cards__cell:hover .feedback__icon svg path {
+	stroke: #02B3CE;
+}
+
+.feedback__cards__cell:hover .feedback__sign svg path {
+	stroke: #02B3CE;
+}
+.feedback__cards__cell:hover .feedback__sign svg path:nth-child(2),
+.feedback__cards__cell:hover .feedback__sign svg path:nth-child(3),
+.feedback__cards__cell:hover .feedback__sign svg path:nth-child(4) {
+	fill: #02B3CE;
+}
+
+
+/* UI */
+.button,
+.button-floating {
+	display: inline-block;
+	margin: 0 auto;
+	min-width: 140px;
+	padding: 15px 18px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	background-color: #333;
+	color: #fff;
+	border: 2px solid #02B3CE;
+	border-radius: 100px;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+	transition: .3s;
+}
+
+.button-floating:hover {
+	background-color: #02B3CE;
+	color: #333;
+	/* box-shadow: 0 15px 20px rgba(51, 219, 219, 0.596); */
+	transform: translateY(-7px);
+}
+.button:hover {
+	background-color: #02B3CE;
+	color: #333;
+}
+
+.button-close {
+	font-size: 14px;
+	background-color: #333;
+	border: none;
+	color: #fff;
+	padding: 5px;
+}
+
+.button-close:hover {
+	color: #02B3CE;
+}
