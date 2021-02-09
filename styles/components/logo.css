@@ -66,12 +66,12 @@
 	transform: scaleY(0);
 }
 .figure-bottom-child:before {
-	border-top: 4px solid #fff;
+	border-top: 2px solid #fff;
 	transform: scaleX(0);
 }
 
 .figure-center {
-	font-size: 3em;
+	font-size: 2.5em;
 	padding: 5px 0;
 	display: flex;
 	justify-content: center;

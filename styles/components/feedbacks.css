@@ -1,21 +1,32 @@
-/* Feedbacks area */
-form {
-	margin: 0 auto;
-	font-size: 14px;
+.main__col-feedback {
+	display: flex;
+	align-items: center;
+}
+.main__col-feedback:first-child,
+.main__col-feedback:last-child {
+	display: flex;
+	align-items: center;
+	width: 25%;
+}
+.main__col-feedback:nth-child(2){
+	width: 50%;
+	padding: 20px;
 }
 
+
+/* Feedbacks area */
 .feedback {
-	max-width: 820px;
 	margin: 22px auto;
 }
 .feedback__cards {
-	/* display: flex;
-	justify-content: center; */
-	column-count: 2;
-    column-gap: 20px;
+	display: flex;
+	justify-content: center;
+	/* column-count: 2;
+	column-gap: 20px; */
 }
 .feedback__cards__cell {
-	margin: 40px 10px;
+	margin: 0 8px;
+	padding: 22px 0;
 	position: relative;
 	width: 300px;
 	/* display: block;
@@ -49,9 +60,14 @@ form {
 
 
 /* Form */
+form {
+	margin: 30px auto;
+	font-size: 14px;
+}
+
 .feedback__form {
-	max-width: 300px;
-	padding: 20px 40px;
+	max-width: 240px;
+	padding: 20px 30px;
 	color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 4px 16px #ccc;
@@ -63,9 +79,7 @@ form {
 	justify-content: space-between;
 	margin-bottom: 20px;
 }
-
 .form__title {
-	/* align-self: center; */
 	font-size: 14px;
 }
 .form__group {
@@ -85,7 +99,14 @@ form {
 	margin-bottom: 5px;
 }
 
-
+@media screen and (max-width: 1379px) {
+	.main__col-feedback:nth-child(1),
+	.main__col-feedback:nth-child(2),
+	.main__col-feedback:nth-child(3) {
+		width: 100%;
+		max-width: 820px;
+	}
+}
 
 
 /* Hover for cards */
@@ -143,7 +164,6 @@ form {
 	color: #fff;
 	padding: 5px;
 }
-
 .button-close:hover {
 	color: #02B3CE;
 }

@@ -30,6 +30,11 @@ a {
 	justify-content: space-between;
 }
 
+@media screen and (max-width: 997px) {
+	.container {
+		padding: 0 20px;
+	}
+}
 
 
 /* UI */
