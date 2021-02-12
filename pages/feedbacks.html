@@ -11,7 +11,11 @@
 			<div class="container">
 				<div class="container__row header__row">
 					<div class="header__col">
-						<div class="header__navigation">
+						<div class="header__burger" id="burger" onclick="toggleModal()">
+							<span></span>
+						</div>
+
+						<div class="header__navigation" id="nav" onclick="toggleModal()">
 							<a href="../pages/index.html" title="Главная" class="header__navigation__item">Главная</a>
 							<a href="../pages/shop.html" title="Каталог" class="header__navigation__item">Каталог</a>
 							<a href="../pages/feedbacks.html" title="Отзывы" class="header__navigation__item header__navigation__item-active">Отзывы</a>
@@ -234,9 +238,9 @@
 
 							<form class="feedback__form hidden" action="mailto:polmi713@gmail.com" method="POST" id="feedback-form">
 								<div class="form__header">
-									<h1 class="form__title title-uppercase-bold">Оставьте ваш отзыв</h1>
+									<span class="form__title title-uppercase-bold">Оставьте ваш отзыв</span>
 									<button class="button-close" type="button" id="close-form-button">
-										<span>X</span>
+										<span></span>
 									</button>
 								</div>
 
@@ -279,6 +283,7 @@
 		</footer>
 	</div>
 
+	<script src="../scripts/all-pages.js"></script>
 	<script src="../scripts/feedback.js"></script>
 </body>
 </html>

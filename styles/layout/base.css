@@ -7,6 +7,10 @@ body {
 	font-weight: 300;
 }
 
+body.is-modal-opened {
+	overflow: hidden;
+}
+
 a {
 	text-decoration: none;
 }
@@ -17,6 +21,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	overflow: hidden;
 }
 
 .container {
@@ -66,6 +71,7 @@ title {
 }
 .scale a svg:hover {
 	transform: scale(1.1);
+	cursor: pointer;
 }
 
 /* Animation for small cards / main */
@@ -75,6 +81,7 @@ title {
 }
 .scale-more img.small:hover {
 	transform: scale(1.1);
+	cursor: pointer;
 }
 
 /* Animation for big cards / main */
@@ -84,6 +91,7 @@ title {
 }
 .scale-less img.big:hover {
 	transform: scale(1.05);
+	cursor: pointer;
 }
 
 /* Animation for cards / shop */
@@ -98,4 +106,5 @@ title {
 .scale-less.box:hover {
 	transform: scale(1.05);
 	background-color: #02B3CE;
+	cursor: pointer;
 }

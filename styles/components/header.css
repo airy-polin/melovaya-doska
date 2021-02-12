@@ -32,16 +32,15 @@
 	padding: 10px 0;
 	color: #fff;
 }
-.header__navigation__item:first-child {
+/* .header__navigation__item:first-child {
 	margin-left: 12px;
-}
+} */
 .header__navigation__item:last-child {
 	margin-right: 12px;
 }
 .header__navigation__item:hover {
 	cursor: pointer;
 	border-bottom: 1px solid #fff;
-	/* font-size: 22px; */
 	transition: 0.3s ease-out;
 }
 .header__navigation__item-active {
@@ -49,6 +48,49 @@
 }
 .header__navigation__item-active:hover {
 	border-color: #02B3CE;
+}
+
+.header__burger {
+	display: none;
+}
+
+.modal__content {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	max-width: 140px;
+	width: 100%;
+	padding: 20px 30px;
+	box-shadow: 0 4px 16px #ccc;
+	border-radius: 10px;
+	left: 10%;
+	top: 10%;
+	transform: translate(-10%, -500%);
+	opacity: 0;
+	transition: 0.5s ease-out;
+	z-index: 10;
+	background-color: #333;
+}
+
+.is-modal-opened .modal__content {
+	opacity: 1;
+	transform: translate(-10%, -10%);
+}
+.is-modal-opened .header__burger {
+	height: 0;
+}
+.is-modal-opened .header__burger span {
+	display: none;
+}
+.is-modal-opened .header__burger::before {
+	transform: rotate(45deg);
+	top: 25%;
+	bottom: 25%;
+}
+.is-modal-opened .header__burger::after {
+	transform: rotate(-45deg);
+	top: 25%;
+	bottom: 25%;
 }
 
 
@@ -71,10 +113,15 @@
 .header__nets__item {
 	display: inline-block;
 	vertical-align: middle;
+}
+.header__nets__item.instagram,
+.header__nets__item.telegram {
 	margin-right: 10px;
 }
+
 .header__nets__item.instagram:hover svg path {
 	stroke: #D43377;
+	cursor: pointer;
   }
 .header__nets__item.instagram:hover svg path:last-child {
 	fill: #D43377;
@@ -82,8 +129,61 @@
 .header__nets__item.telegram:hover svg path {
 	stroke: #37AEE2;
 	fill: #37AEE2;
+	cursor: pointer;
 }
 .header__nets__item.viber:hover svg path {
 	stroke:#665CA7;
 	fill: #665CA7;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 997px) {
+	.header__navigation {
+		display: none;
+	}
+	.header__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+	}
+	.header__burger span {
+		display: block;
+		position: absolute;
+		background-color: #fff;
+		left: 0;
+		top: 9px;
+		width: 100%;
+		height: 2px;
+		transition: 0.5s ease-out;
+	}
+	.header__burger::before,
+	.header__burger::after {
+		content: '';
+		display: block;
+		position: absolute;
+		background-color: #fff;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		transition: 0.5s ease-out;
+	}
+	.header__burger::before {
+		top: 0;
+	}
+	.header__burger::after {
+		bottom: 0;
+	}
+}
+
+@media screen and (max-width: 499px) {
+	.header__nets__item.instagram,
+	.header__nets__item.telegram {
+		margin-right: 7px;
+	}
+	.header__nets__item svg {
+		width: 40px;
+		height: 40px;
+	}
 }
