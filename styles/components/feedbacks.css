@@ -156,6 +156,9 @@ form {
 		width: 100%;
 		max-width: 820px;
 	}
+	.feedback {
+		height: auto;
+	}
 }
 
 

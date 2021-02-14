@@ -19,3 +19,12 @@ function toggleModal() {
 	navigation.classList.toggle("header__navigation");
 	navigation.classList.toggle("modal__content");
 }
+
+
+// function addGlue() {
+// 	let arrayData = document.getElementsByClassName("contacts__item");
+// 	console.log(arrayData);
+// 	let strData = arrayData.join(' | ');
+// 	console.log(strData);
+// }
+// addGlue();
