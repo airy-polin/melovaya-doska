@@ -17,7 +17,6 @@
 .header__col {
 	flex: 1 0 calc(100%/2);
 }
-
 .header__pseudo {
 	min-height: 82px;
 }
@@ -49,7 +48,6 @@
 .header__navigation__item-active:hover {
 	border-color: #02B3CE;
 }
-
 .header__burger {
 	display: none;
 }
@@ -58,7 +56,7 @@
 	display: flex;
 	flex-direction: column;
 	position: fixed;
-	max-width: 140px;
+	max-width: 170px;
 	width: 100%;
 	padding: 20px 30px;
 	box-shadow: 0 4px 16px #ccc;
@@ -102,14 +100,12 @@
 	color: #fff;
 	margin-right: 17px;
 }
-
 .header__col:last-child,
 .header__nets {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
-
 .header__nets__item {
 	display: inline-block;
 	vertical-align: middle;
@@ -139,7 +135,8 @@
 
 
 @media screen and (max-width: 997px) {
-	.header__navigation {
+	.header__navigation,
+	.header__tel {
 		display: none;
 	}
 	.header__burger {

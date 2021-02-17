@@ -7,7 +7,6 @@ body {
 	font-weight: 300;
 	margin: auto;
 }
-
 body.is-modal-opened {
 	overflow: hidden;
 }
@@ -79,6 +78,10 @@ title {
 .scale-more img.small {
 	transition: 1s;
 	display: block;
+
+	/* add to fix webkit bug jitter */
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: perspective(1000px);
 }
 .scale-more img.small:hover {
 	transform: scale(1.1);
@@ -89,6 +92,10 @@ title {
 .scale-less img.big {
 	transition: 1s;
 	display: block;
+
+	/* add to fix webkit bug jitter */
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: perspective(1000px);
 }
 .scale-less img.big:hover {
 	transform: scale(1.05);

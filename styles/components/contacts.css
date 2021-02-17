@@ -1,9 +1,7 @@
 .main__row-contacts:last-child {
-	/* height: 20%; */
 	align-items: center;
 }
 .main__row-contacts:first-child {
-	/* height: 80%; */
 	margin: 60px 0;
 }
 .main__col-contacts {
@@ -38,14 +36,12 @@
 .contacts__item:nth-child(4)::after {
 	content: '|';
 }
-
 .contacts__content span a:hover,
 .contacts__item:nth-child(5):hover {
 	color:  #02B3CE;
 	border-bottom: 1px solid #02B3CE;
 	cursor: pointer;
 }
-
 .content__quote {
 	font-family: 'Amatic SC', sans-serif;
 	font-size: 2em;
@@ -54,7 +50,6 @@
 	margin: 30px auto;
 	padding: 0 15px;
 }
-
 .contacts__map {
 	/* min-height: 450px; */
 	margin: 30px auto;

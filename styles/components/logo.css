@@ -20,7 +20,6 @@
 	margin: 0;
 	transition: 1s;
 }
-
 .figure-bottom-child {
 	width: 60%;
 	font-size: 14px;
@@ -30,7 +29,6 @@
 	position: relative;
 	transition: 1s;
 }
-
 .figure-top:before,
 .figure-top:after,
 .figure-bottom:before,
@@ -43,10 +41,9 @@
 	bottom: 5%; 
 	left: 5%;
 	transition: 1s;
-	animation: border-drawing 1s ease alternate;
+	animation: border-drawing 1s ease;
 	animation-fill-mode: forwards;
 }
-
 .figure-top:before {
 	border-top: 4px solid #fff;
 	transform: scaleX(0);
@@ -69,7 +66,6 @@
 	border-top: 2px solid #fff;
 	transform: scaleX(0);
 }
-
 .figure-center {
 	font-size: 2.5em;
 	padding: 5px 0;
@@ -85,6 +81,7 @@
 
 @keyframes border-drawing {
 	100% {
-		transform: scale(1);
+		transform: scaleX(1);
+		transform: scaleY(1);
 	}
 }
