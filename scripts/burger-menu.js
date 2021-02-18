@@ -24,27 +24,53 @@ function toggleModal() {
 }
 
 
-// scroll
-function scrollContent() {
-	window.scrollTo({
-		top: 0,
-		behavior: 'smooth',
-	});
-}
+// scroll (POLINA)
+// function scrollContent() {
+// 	window.scrollTo({
+// 		top: 0,
+// 		behavior: 'smooth',
+// 	});
+// }
 
 
-// mCustomScrollbar
-(function($) {
-	$(window).on('load', function() {
-		$('.mycustom-scroll').mCustomScrollbar();
+// ---------------------------------------------------------------------
+// TEST
+// function stylizeScrollbar() {
+// 	document.body.style.scrollbarFaceColor='black';
+// 	document.body.style.scrollbarArrowColor="colorname";
+// 	document.body.style.scrollbarTrackColor="colorname";
+// 	document.body.style.scrollbarHighlightColor="colorname";
+// }
+
+
+
+// let mode = 0;
+
+// function blinkscroll() {
+// 	if (mode === 0) {
+// 		document.body.style.scrollbarFaceColor='blue';
+// 	} else {
+// 		document.body.style.scrollbarFaceColor='green';
+// 		mode = (mode === 0) ? 1 : 0;
+// 	}
+// }
+
+// setInterval(“blinkscroll()”,1000)
+// ---------------------------------------------------------------------
+
+
+
+//jQuery custom content scroller
+(function($){
+	$(window).on("load",function(){
+		$(".mCustomScrollbar").mCustomScrollbar();
 	});
 })(jQuery);
 
-$('.mycustom-scroll').mCustomScrollbar({
-	axis: 'y',              // вертикальный скролл 
-	theme: 'inset-2',  // тема 
-	scrollInertia: '330',   // продолжительность прокрутки, значение в миллисекундах 
-	setHeight: '100%',      // высота блока (переписывает CSS) 
+$(".mCustomScrollbar").mCustomScrollbar({
+	theme: "my-theme",
+	axis: "y",
+	scrollInertia: '330',   // продолжительность прокрутки, значение в миллисекундах
 	mouseWheel: {
 		deltaFactor: 300    // кол-во пикселей на одну прокрутку колёсика мыши 
 	}

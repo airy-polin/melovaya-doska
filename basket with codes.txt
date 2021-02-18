@@ -1,0 +1,51 @@
+http://airy-polin.github.io/melovaya-doska
+
+https://airy-polin.github.io/melovaya-doska/pages/index.html
+
+
+
+// mCustomScrollbar
+(function($) {
+	$(window).on('load', function() {
+		$('.mycustom-scroll').mCustomScrollbar();
+	});
+})(jQuery);
+
+$('.mycustom-scroll').mCustomScrollbar({
+	axis: 'y',              // вертикальный скролл 
+	theme: 'light-2',  // тема 
+	scrollInertia: '330',   // продолжительность прокрутки, значение в миллисекундах 
+	setHeight: '80%',      // высота блока (переписывает CSS) 
+	mouseWheel: {
+		deltaFactor: 300    // кол-во пикселей на одну прокрутку колёсика мыши 
+	}
+});
+
+
+
+
+	CHROME
+	/* Scrollbar */
+	/* width */
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+	/* track */
+	::-webkit-scrollbar-track {
+		background: #fff; 
+	}
+	/* handle */
+	::-webkit-scrollbar-thumb {
+		background: #A9C9DD; 
+	}
+	/* handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #02B3CE; 
+	}
+
+
+	FIREFOX
+	scrollbar-width: thin;
+	scrollbar-color:  #A9C9DD #fff;
+
+

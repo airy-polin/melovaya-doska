@@ -112,9 +112,6 @@ img.small {
 	}
 	.main__col:last-child {
 		height: calc(100vh - 160px);
-		overflow-y: scroll;
-		scrollbar-width: thin;
-		scrollbar-color:  #A9C9DD #fff;
 
 		/* firefox (hidden scrollbar) */
 		/* scrollbar-width: none; */
@@ -124,25 +121,6 @@ img.small {
 		width: 0;
 		height: 0;
 	} */
-
-	/* Scrollbar */
-	/* width */
-	::-webkit-scrollbar {
-		width: 10px;
-	}
-	/* track */
-	::-webkit-scrollbar-track {
-		background: #fff; 
-	}
-	/* handle */
-	::-webkit-scrollbar-thumb {
-		background: #A9C9DD; 
-	}
-	/* handle on hover */
-	::-webkit-scrollbar-thumb:hover {
-		background: #02B3CE; 
-	}
-
 }
 
 @media screen and (max-width: 1379px) {
@@ -244,4 +222,20 @@ img.small {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+
+
+.mCS-my-theme.mCSB_scrollTools .mCSB_draggerRail {
+	background-color: #fff;
+	width: 7px;
+	border-radius: 0%;
+} 
+.mCS-my-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background-color: #A9C9DD;
+	border-radius: 0%;
+}
+.mCS-my-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover {
+	background-color: #02B3CE;
+	border-radius: 0%;
 }

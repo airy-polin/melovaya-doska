@@ -4,6 +4,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="../styles/stylesheet.css" rel="stylesheet" type="text/css" />
 	<title>melovaya.doska</title>
+
+	<!-- mCustomScrollbar -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<!-- LazyLoad -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="../scripts/lazyload.js"></script>
 	<script>
@@ -16,11 +22,6 @@
 			background-image: url("data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7");
 		}
 	</style>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="../scripts/jquery.mCustomScrollbar.min.css" />
-<script src="../scripts/jquery.mCustomScrollbar.concat.min.js"></script>
-
 </head>
 
 <body>
@@ -29,7 +30,7 @@
 			<div class="container">
 				<div class="container__row header__row">
 					<div class="header__col">
-						<div class="header__burger" id="burger" onclick="toggleModal()">
+						<div class="header__burger" id="burger">
 							<span></span>
 						</div>
 
@@ -111,7 +112,7 @@
 						</aside>
 					</div>
 
-					<div class="main__col mycustom-scroll" data-mcs-theme="3d-dark">
+					<div class="main__col mCustomScrollbar" data-mcs-theme="my-theme">
 						<article class="article">
 							<div class="article__cards row">
 								<div class="article__cards__cell scale-less box">

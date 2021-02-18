@@ -4,6 +4,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="../styles/stylesheet.css" rel="stylesheet" type="text/css" />
 	<title>melovaya.doska</title>
+	
+	<!-- mCustomScrollbar -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../scripts/jquery.mCustomScrollbar.concat.min.js"></script>
 </head>
 
 <body>
@@ -16,7 +20,7 @@
 							<span></span>
 						</div>
 
-						<div class="header__navigation" id="nav" onclick="toggleModal()">
+						<div class="header__navigation" id="nav">
 							<a href="../pages/index.html" title="Главная" class="header__navigation__item">Главная</a>
 							<a href="../pages/shop.html" title="Каталог" class="header__navigation__item">Каталог</a>
 							<a href="../pages/feedbacks.html" title="Отзывы" class="header__navigation__item header__navigation__item-active">Отзывы</a>
@@ -94,7 +98,7 @@
 						</aside>
 					</div>
 
-					<div class="main__col-feedback">
+					<div class="main__col-feedback mCustomScrollbar" data-mcs-theme="my-theme">
 						<div class="feedback">
 							<div class="feedback__cards row">
 								<div class="feedback__cards__cell">
