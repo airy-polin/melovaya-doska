@@ -3,6 +3,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="../styles/stylesheet.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="../images/logo.png" />
 	<title>melovaya.doska</title>
 
 	<!-- mCustomScrollbar -->
@@ -10,11 +11,8 @@
 	<script src="../scripts/jquery.mCustomScrollbar.concat.min.js"></script>
 
 	<!-- LazyLoad -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="../scripts/lazyload.js"></script>
-	<script>
-		let lazyLoadInstance = new LazyLoad({elements_selector: ".lazy"});
-	</script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+	<script src="../scripts/jquery.lazyloadxt.min.js"></script>
 	<style>
 		img {
 			width: 100%;
@@ -30,11 +28,11 @@
 			<div class="container">
 				<div class="container__row header__row">
 					<div class="header__col">
-						<div class="header__burger" id="burger">
+						<div class="header__burger" id="burger" onclick="toggleModal()">
 							<span></span>
 						</div>
 
-						<div class="header__navigation" id="nav" onclick="toggleModal()">
+						<div class="header__navigation" id="nav" >
 							<a href="../pages/index.html" title="Главная" class="header__navigation__item">Главная</a>
 							<a href="../pages/shop.html" title="Каталог" class="header__navigation__item header__navigation__item-active">Каталог</a>
 							<a href="../pages/feedbacks.html" title="Отзывы" class="header__navigation__item">Отзывы</a>
@@ -185,5 +183,6 @@
 	</div>
 
 	<script src="../scripts/burger-menu.js"></script>
+	<script src="../scripts/scrollbar.js"></script>
 </body>
 </html>

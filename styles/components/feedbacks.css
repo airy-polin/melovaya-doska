@@ -17,7 +17,7 @@
 /* Feedbacks area */
 .feedback {
 	/* margin: 22px auto; */
-	height: calc(100vh - 160px);
+	/* height: calc(100vh - 160px); */
 	display: flex;
 }
 .feedback__cards {
@@ -60,13 +60,13 @@
 form {
 	margin: 30px auto;
 	font-size: 14px;
+	display: flex;
 }
 
 .feedback__form {
 	max-width: 240px;
 	padding: 20px 30px;
 	color: #fff;
-	border-radius: 10px;
 	box-shadow: 0 4px 16px #ccc;
 	display: flex;
 	flex-direction: column;
@@ -87,7 +87,7 @@ form {
 	margin-bottom: 15px;
 }
 .form__input {
-	border-radius: 4px;
+	padding: 10px;
 }
 .form__input:focus {
 	border-color: #02B3CE;
@@ -103,7 +103,7 @@ form {
 	.app {
 		height: 100vh;
 	}
-	.main__col-feedback:not(:first-child):not(:last-child) {
+	.main__col-feedback.mCustomScrollbar {
 		height: calc(100vh - 160px);
 	}
 }

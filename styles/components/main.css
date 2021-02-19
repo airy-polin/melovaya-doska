@@ -50,7 +50,7 @@
 .article {
 	max-width: 820px;
 	margin: 22px auto;
-	height: calc(100vh - 160px);
+	/* height: calc(100vh - 160px); */
 	display: flex;
 }
 .article__cards {
@@ -110,17 +110,9 @@ img.small {
 	.app {
 		height: 100vh;
 	}
-	.main__col:last-child {
+	.main__col.mCustomScrollbar {
 		height: calc(100vh - 160px);
-
-		/* firefox (hidden scrollbar) */
-		/* scrollbar-width: none; */
 	}
-	/* webkit (hidden scrollbar) */
-	/* .main__col:last-child::-webkit-scrollbar {
-		width: 0;
-		height: 0;
-	} */
 }
 
 @media screen and (max-width: 1379px) {
@@ -141,12 +133,19 @@ img.small {
 	.article {
 		margin: 0 auto;
 		height: auto;
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 1224px) and (min-width: 779px) {
+	.main__col.mCustomScrollbar {
+		max-width: 820px;
 	}
 }
 
 @media screen and (max-width: 997px) {
 	.main__col:first-child,
-	.main__col:last-child {
+	.main__col:last-child:not(.main__col.main__col.mCustomScrollbar) {
 		max-width: 620px;
 	}
 	.main__col:first-child {
@@ -222,6 +221,17 @@ img.small {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+@media screen and (max-width: 1379px) and (min-width: 1225px) {
+	.box {
+		margin: 10px;
+		width: 250px;
+	}
+	.main__col.mCustomScrollbar {
+		padding-top: 0;
+		padding-bottom: 60px;
+	}
 }
 
 
