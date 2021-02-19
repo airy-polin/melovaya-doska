@@ -42,6 +42,7 @@
 	left: 5%;
 	transition: 1s;
 	animation: border-drawing 1s ease;
+	animation-delay: 0.3s;
 	animation-fill-mode: forwards;
 }
 .figure-top:before {
