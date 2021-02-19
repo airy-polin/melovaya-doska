@@ -48,6 +48,7 @@
 .header__navigation__item-active:hover {
 	border-color: #02B3CE;
 }
+
 .header__burger {
 	display: none;
 }
@@ -115,6 +116,7 @@
 	margin-right: 10px;
 }
 
+/* Visual effects for nets */
 .header__nets__item.instagram:hover svg path {
 	stroke: #D43377;
 	cursor: pointer;
