@@ -1,7 +1,6 @@
 .header {
 	background-color: #333;
 	border-bottom: 2px solid #fff;
-	box-sizing: border-box;
 	font-size: 20px;
 	position: fixed;
 	top: 0;
@@ -61,7 +60,6 @@
 	width: 100%;
 	padding: 20px 30px;
 	box-shadow: 0 4px 16px #ccc;
-	border-radius: 10px;
 	left: 10%;
 	top: 10%;
 	transform: translate(-10%, -500%);
