@@ -10,6 +10,7 @@
 .main__col {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 .main__col:first-child{
 	width: calc(100%/3);

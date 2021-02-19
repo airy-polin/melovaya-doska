@@ -1,5 +1,3 @@
-'use srtict'
-
 //jQuery custom content scroller
 (function($){
 	$(window).on("load",function(){
